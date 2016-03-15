@@ -15,6 +15,75 @@
 # This method should, in its final form, not do any output.
 
 def valid_date?(month, day, year)
-  #write your method here
-  return true
+  if year < 1880 || year > 2280   # make sure correct years
+  return false
 end
+
+months_31d = [1, 3, 5, 7, 8, 10, 12]    #Breakdown of 31 and 30 day months
+    - months_30d = [ 4, 6, 9, 11]
+    - months_misc = [ 2 ]
+
+
+if day < 1
+	return false
+end
+
+
+if month = 1 && day > 31 
+	return false
+end
+
+
+if month = 3 && day > 31
+	return false
+end
+
+if month = 5 && day > 31
+	return false
+end
+
+if month = 7 && day > 31 
+	return false
+end
+
+if month = 8 && day > 31
+	return false
+end
+
+if month = 10 && day > 31 
+	return false
+end
+
+if month = 12 && day > 31 
+	return false
+
+if month = 4 && day > 30 
+	return false
+end
+
+if month = 6 && day > 30 
+	return false
+end
+
+if month = 9 && day > 30 
+	return false
+end
+
+if month = 11 && day > 30 
+	return false
+end
+
+
+
+if month < 1 || month >12   #make sure months are between 1-12
+	return false
+end
+
+if month < 1
+	return false
+end
+
+if month > 12 
+	return false
+end
+
