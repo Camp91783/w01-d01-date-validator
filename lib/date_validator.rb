@@ -72,15 +72,8 @@ def length_month (month, day)
 		return false
 	end
 
-def leap_month (month, day)
-		when month = 2 
+def leap_year (year)
 			if (year % 4 == 0 && year % 100 !=0) || year % 400 == 0
 			return false
-		else 
-		if day < 1 || day > 28
-				return false 
-      end
-    end
-  end  
-
+	
 end
