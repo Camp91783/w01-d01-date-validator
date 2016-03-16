@@ -9,5 +9,8 @@ def valid_date(month, day, year)
 
 end
 
-
+Def valid_years ( years, months, days)
+    if year < 1880 || year > 2280   
+        return false
+end
 
