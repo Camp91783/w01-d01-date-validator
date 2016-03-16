@@ -1,14 +1,18 @@
 
+require "pry"
 
 def valid_date(month, day, year)
   months_31 = [ 1, 3, 5, 7, 8, 10, 12]
   months_30 = [ 4, 6, 9, 11]
 
-  if month < 1 || month > 12    # make sure month between 1-12
+  if month < 1 || month > 12    
   		return false
 	end
 
-def valid_years ( years, months, days)  # valid years
+binding.pry
+
+
+def valid_years ( years, months, days)  
   if year < 1880 || year > 2280   
       return false
 	end
@@ -69,14 +73,14 @@ def length_month (month, day)
 	end
 
 def leap_month (month, day)
-	when month = 2 
-		if (year % 4 == 0 && year % 100 !=0) || year % 400 == 0
+		when month = 2 
+			if (year % 4 == 0 && year % 100 !=0) || year % 400 == 0
 			return false
 		else 
 		if day < 1 || day > 28
 				return false 
       end
     end
-      
+  end  
 
-
+end
