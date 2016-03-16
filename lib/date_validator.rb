@@ -6,8 +6,18 @@ def valid_date(month, day, year)
 
   if month < 1 || month > 12
   	return false
-
 end
+
+def length_month(month, day)
+    if month = 1 && day > 31 
+    	return false
+end
+
+def length_month(month, day)
+		if month = 3 && day > 31
+			return false
+end
+
 
 Def valid_years ( years, months, days)
     if year < 1880 || year > 2280   
