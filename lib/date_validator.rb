@@ -9,38 +9,38 @@ def valid_date(month, day, year)
 end
 
 def length_month(month, day)
-    if month = 1 && day > 31 
+  if month = 1 && day > 31 
     	return false
 end
 
 def length_month(month, day)
-		if month = 3 && day > 31
+	if month = 3 && day > 31
 			return false
 end
 
 def length_month(month, day)
-		if month = 5 &&	day > 31
+	if month = 5 &&	day > 31
 			return false
 end
 
 def length_month (month, day)
-		if month = 7 && day > 31
+	if month = 7 && day > 31
 			return false
 
 def length_month (month, day)
-		if month = 8 && day > 31 
+	if month = 8 && day > 31 
 			return false
 
 def length_month (month, day)
-		if month = 10 && day > 31
+	if month = 10 && day > 31
 			return false
 
 def length_month (month, day)
-	 	if month = 12 && day > 31 
+	if month = 12 && day > 31 
 	 		return false
 
 Def valid_years ( years, months, days)
-    if year < 1880 || year > 2280   
+  if year < 1880 || year > 2280   
         return false
 end
 
