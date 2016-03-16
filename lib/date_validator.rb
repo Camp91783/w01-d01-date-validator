@@ -6,67 +6,67 @@ def valid_date(month, day, year)
 
   if month < 1 || month > 12    # make sure month between 1-12
   	return false
-end
+	end
 
 def valid_years ( years, months, days)  # valid years
   if year < 1880 || year > 2280   
         return false
-end
+	end
 
 def length_month(month, day)
   if month = 1 && day > 31 
     	return false
-end
+	end
 
-def length_month(month, day)
+	def length_month(month, day)
 	if month = 3 && day > 31
 			return false
-end
+	end
 
 def length_month(month, day)
 	if month = 5 &&	day > 31
 			return false
-end
+	end
 
 def length_month (month, day)
 	if month = 7 && day > 31
 			return false
-end
+	end
 
 def length_month (month, day)
 	if month = 8 && day > 31 
 			return false
-end
+	end
 
 def length_month (month, day)
 	if month = 10 && day > 31
 			return false
-end
+	end
 
 def length_month (month, day)
 	if month = 12 && day > 31 
 	 		return false
-end
+	end
 
 def length_month (month, day)
 	if month = 4 && day > 30
 		return false
-end
+	end
 
 def length_month (month, day)
 	if month = 6 && day > 30
 		return false
-end
+	end
 
 def length_month (month, day)
 	if month = 9 && day > 30
 		return false
-end 
+	end 
 
 def length_month (month, day)
 	if month = 11 && day > 30
 		return false
-end
+	end
 
 def leap_month (month, day)
 	when month = 2 
