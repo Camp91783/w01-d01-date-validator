@@ -39,6 +39,22 @@ def length_month (month, day)
 	if month = 12 && day > 31 
 	 		return false
 
+def length_month (month, day)
+	if month = 4 && day > 30
+		return false
+
+def length_month (month, day)
+	if month = 6 && day > 30
+		return false
+
+def length_month (month, day)
+	if month = 9 && day > 30
+		return false
+
+def length_month (month, day)
+	if month = 11 && day > 30
+		return false
+
 Def valid_years ( years, months, days)
   if year < 1880 || year > 2280   
         return false
