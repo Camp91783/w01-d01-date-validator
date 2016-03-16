@@ -18,6 +18,26 @@ def length_month(month, day)
 			return false
 end
 
+def length_month(month, day)
+		if month = 5 &&	day > 31
+			return false
+end
+
+def length_month (month, day)
+		if month = 7 && day > 31
+			return false
+
+def length_month (month, day)
+		if month = 8 && day > 31 
+			return false
+
+def length_month (month, day)
+		if month = 10 && day > 31
+			return false
+
+def length_month (month, day)
+	 	if month = 12 && day > 31 
+	 		return false
 
 Def valid_years ( years, months, days)
     if year < 1880 || year > 2280   
