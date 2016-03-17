@@ -1,8 +1,8 @@
 def month_length(month, year)
     return 31 if [1,3,5,7,8,10,12].include(month)
     return 30 if [4,6,9,11].include(month)
-    return 29 if month == 2 && leap_year?(year)
-    return 28 if month == 2 && leap_year?(year) == false
+    return 29 if month == 2 && leap_year(year)
+    return 28 if month == 2 && leap_year(year) == false
  
   if month < 1 || month > 12    
   		return false
