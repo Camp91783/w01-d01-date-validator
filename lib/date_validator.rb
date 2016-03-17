@@ -1,86 +1,48 @@
-def month_length(month, year)
-    return 31 if [1,3,5,7,8,10,12].include(month)
-    return 30 if [4,6,9,11].include(month)
-    return 29 if month == 2 && leap_year(year) == true
-    return 28 if month == 2 && leap_year(year) == false
- 
-  if month < 1 || month > 12    
-  		return false
-	end
-end	
+def valid_date? ( day, month, year)
+	month_length(month, year)
+	valid_year (year, leap_year)
+	length_month(month, day)
+	leap_year(year)
+end
 
-
-def valid_year (year, leap_year)  
-  if !(year > 1880 &&  year < 2280)   
-      return false
+def february_validation(year)
+	if leap_year(year)
+		days_in_february = 29
+	else 
+		days_in_february = 28
 	end
 end
 
-def length_month(month, day)
-  if month = 1 && day > 31 || day < 1
-    	return false
-	end
-end	
-
-def length_month(month, day)
-	if month = 3 && day > 31 || day < 1
-			return false
-	end
+def days_Month_length(Month, year)
+		number_of_days_month = {
+													1 => 31,
+													2 => february_validation,
+													3 => 31
+													4 => 30
+													5 => 31
+													6 => 30
+													7 => 31
+													8 => 31
+													9 => 30
+													10 => 31
+													11 => 30
+													12 => 31
+													}
+		number_of_days_month = 0
+		number_of_days_month (month)
 end
 
-def length_month(month, day)
-	if month = 5 &&	day > 31 || day < 1
-			return false
-	end
-end
 
-def length_month (month, day)
-	if month = 7 && day > 31 || day < 1
-			return false
-	end
+def month_length(month)
+   	 month >= 1 && month <= 12    
 end	
 
-def length_month (month, day)
-	if month = 8 && day > 31 || day < 1
-			return false
-	end
-end	
 
-def length_month (month, day)
-	if month = 10 && day > 31 || day < 1
-			return false
-	end
-end	
-
-def length_month (month, day)
-	if month = 12 && day > 31 || day < 1
-	 		return false
-	end
-end	
-
-def length_month (month, day)
-	if month = 4 && day > 30 || day < 1
-		return false
-	end
+def valid_year (year)  
+    year >= 1880 && year <=2280  
 end
 
-def length_month (month, day) day < 1
-	if month = 6 && day > 30
-		return false
-	end
-end
 
-def length_month (month, day) day < 1
-	if month = 9 && day > 30
-		return false
-	end
-end 
-
-def length_month (month, day) day < 1
-	if month = 11 && day > 30
-		return false
-	end
-end
 
 
 def leap_year(year)
