@@ -10,7 +10,7 @@ def month_length(month, year)
 end	
 
 
-def valid_years ( years, months, days)  
+def valid_date ( years, months, days)  
   if year < 1880 || year > 2280   
       return false
 	end
