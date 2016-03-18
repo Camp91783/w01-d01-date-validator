@@ -25,7 +25,7 @@ end
 # breakdown of days in each month
 
 def days_month_length(day, month, year)
-		number_of_days_month = {
+		number_of_days_month ={
 													1 => 31,
 													2 => february_validation(year),
 													3 => 31,
@@ -41,13 +41,8 @@ def days_month_length(day, month, year)
 													}
 												
 			#number_of_days_month = 0
-			number_of_days_month[day]
+			number_of_days_month[month]
 end
-
-#  not sure what I did here
-
-
-
 
 # checking to make sure range on month is valid
 
@@ -61,14 +56,11 @@ def valid_year (year)
     year >= 1880 && year <=2280  
 end
 
-
-
 # leap year formula
 
 def leap_year(year)
 		year % 400 == 0 || (year % 4 == 0 && year % 100 !=0)
 end 
-
 
 
 
