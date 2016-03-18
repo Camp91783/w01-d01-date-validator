@@ -1,10 +1,11 @@
-def valid_date? ( day, month, year)
+#require 'pry'
+
+def valid_date? ( month, day, year)
 	month_length(month) &&
 	valid_year(year) &&
 	days_month_length(day, month, year) &&
-	validate_day(day, month, year) &&
-	leap_year(year) 
-end
+	validate_day(day, month, year) 
+	end
 
 
 def validate_day(day, month, year)
@@ -61,6 +62,8 @@ end
 def leap_year(year)
 		year % 400 == 0 || (year % 4 == 0 && year % 100 !=0)
 end 
+
+#binding.pry
 
 
 
